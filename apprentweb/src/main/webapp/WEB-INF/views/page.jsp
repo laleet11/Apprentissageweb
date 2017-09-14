@@ -15,188 +15,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title>Apparent home</title>
-<style>
-html {
-    height: 100%;
-    margin: 0;
-}
-body {
-height: 100%;
-    margin: 0;    
-font-family: "Lato", sans-serif;
-background-color: black;
-}
-
-header {
-    color: white;
-    background-color: black;
-    clear: left;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
-    text-align: center;
-    font-weight: bold;
-    font-family: "Lato", sans-serif;
-	}
-header.intro::first-letter 
-    {
-	color: #ff0000;
-	font-size: 180%;
-}
-.big
-{
-font-size: 50px;
-}
-.bg {
-    background-image: url('resources/images/bg3.jpg');
-    height: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0px;
-    overflow: hidden;
-    background-color: black;
-}
-li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 10px;
-	font-size: 20px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: green;
-	padding: 15px;
-}
-
-.container-fluid
-{ 
-    background-color: black;
-	opacity: 0.7;
-    filter: alpha(opacity=70);
-    font-weight: bold;
-    
-}
-.panel-body
-{
-background-color: orange;
-padding: 0px;
-color: blue;
-opacity: 0.7;
-filter: alpha(opacity=70);
-}
-.panel-heading
-{
-padding: 1px;
-color: blue;
-background-color: grey;
-opacity: 0.7;
-filter: alpha(opacity=70);
-}
-.container1
-{
-width:33%;
-float: right;
-font-weight: bold;
-padding-top: 200px;
-opacity: 0.7;
-filter: alpha(opacity=70);
-font-size: 40px;
-}
-.card
-{
-padding:1px;
-height: 460px;
-color: white;
-border: 2px solid white;
-border-radius: 9px;
-}
-.col-md-3 {
-  color: white;
-}
-
-@media (max-width: 750px) {
-  .column {
-    width: 100%;
-	display: block;
-  }
-}
-
-.container2 {
-  padding: 0 7px;
-}
-
-.container2::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 5px;
-  display: inline-block;
-  padding: 12px;
-  color: black;
-  background-color: white;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-footer
-{
-padding-top:25px;
-color:white;
-font-size:16px;
-}
-.button:hover {
-  background-color: #555;
-}
-img1
-{
-height: 500px;
-width: 780px;
-}
-.zoom
-{
-float:left;
-}
-.zoom1
-{
-font-size: 36px;
-color: white;
-padding-top: 20px;
-padding-bottom: 30px;
-}
-#z1
-{
-font-size: 40px;
-text-align: center;
-}
-#z2
-{
-text-align: left;
-font-size: 20px;
- }
-#Ls
-{
-list-style-type: disc;
-color: white; 
-font-size: 18px;
-}
-</style>
+ <!-- bootstrap core css --> 
+ <link href= "${css}/bootstrap.min.css" rel="stylesheet">
+ <!-- custom css -->
+ <link href= "${css}/apprentstyle.css" rel="stylesheet">
+   
 </head>
 <body>
-<div class="bg">
+<div class="bg" style="background-image: url('resources/images/bg3.jpg')">
+
 <header class="intro">
     <h1 class="big" style="margin:0px">
     <strong>APPRENTISSAGE WEB</strong>
@@ -211,7 +38,6 @@ font-size: 18px;
   </ul> 
   </div>
 </nav>
-<section>
 <div class="container1">
 <div class="panel-group" >
   <div class="panel panel-default" >
@@ -387,46 +213,39 @@ font-size: 18px;
   </div>  
 </div>
 </div>
-<footer class="py-5 bg-dark">
+<br>
+<br>
+<br>
+<footer class="site-footer" style="color:white; font-size:18px">
 <div class="container">
-<div class="col-md-1">
+<div class="row">
+<div class="col-md-5">
+<h4>Contact Address:</h4>
+<address>
+	bodhi place for learning<br>
+	2N-A/165<br>
+	Lajpat Nagar(New-Delhi)
+</address>
+</div>
+</div>
+<div class="bottom-footer">
+<div class="col-md-5">
+<a href="#"><i class="fa fa-google fa-2x">  </i></a>&nbsp;
+<a href="#"><i class="fa fa-twitter fa-2x">   </i></a>&nbsp;
+<a href="#"><i class="fa fa-facebook fa-2x">  </i></a>&nbsp;
+<a href="#"><i class="fa fa-linkedin fa-2x">  </i></a>&nbsp;
+<a href="#"><i class="fa fa-github fa-2x">  </i></a>&nbsp;
 </div>
 <div class="col-md-2">
-<h3>ABOUT US</h3>
-<ul>
-<li>Team</li>
-<li>Courses</li>
-<li>Certification</li>
-</ul>
 </div>
-<div class="col-md-2">
-<h3>CONTACT US</h3>
-<ul>
-<li>Google Map</li>
-<li>By Phone</li>
-<li>Email</li>
-</ul>
-</div>
-<div class="col-md-2">
-<h3>Empower Us</h3>
-<ul>
-<li>Feedback</li>
-<li>Write about us!</li>
-<li>Build Your Profile</li>
-<li></li>
-</ul>
-</div>
-<div class="col-md-4">
-  <div class="w3-padding w3-xxlarge w3-text-teal w3-center">
-    <i class="fa fa-google"></i>
-    <i class="fa fa-linkedin"></i>
-    <i class="fa fa-twitter"></i>
-    <i class="fa fa-facebook"></i>
-  </div>
-</div>
-<div class="col-md-1">
+<div class="col-md-5">
+<div class="footer-nav"> 
+<a href="#"><i class="fa fa-home fa-2x"> Home</i></a>
+<a href="#"><i class="fa fa-user fa-2x"> About</i></a>
+<a href="#"><i class="fa fa-phone fa-2x"> Contact</i></a>
 </div>
 </div>
-</footer>
-</body>
+</div>
+</div>
+</footer></body>
 </html> 
