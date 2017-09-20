@@ -25,10 +25,10 @@
    
 </head>
 <body>
+<div class="wrapper">
 <div class="bg" style="background-image: url('resources/images/bg3.jpg')">
 <!-- navbar -->
 <%@include file="./shared/navbar.jsp" %>
-
 <!-- first home page -->
 <c:if test="${userClickHome == true}">
 <%@include file="home.jsp" %>
@@ -48,16 +48,21 @@
   <%@include file="listProducts.jsp" %>
 </c:if>  
 
-
 <!-- footer -->
 <%@include file="./shared/footer.jsp" %>
 
 <!-- bootstrap core js -->
 <script src="${js}bootstrap.min.js"></script>
 
+ <!-- datatable plugin -->
+ <script src="${js}/jquery.dataTables.js"></script> 
+  
+  
 <!-- selfcoded -->
 <script src="${js}/apprentstyle.js"></script>
 
+
+</div>
 </div>
 </body>
 </html> 
