@@ -47,7 +47,7 @@
 
 			<table id="productListTable" class="table table-striped table-bordered">
 	
-	<thread>
+	<thead>
 	
 	<tr>
 		<th>ID</th>
@@ -56,7 +56,7 @@
 	
 	</tr>
 	
-	</thread>
+	</thead>
 	
 
 	</table>

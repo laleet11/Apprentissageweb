@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <spring:url var="css" value="/resources/css" />
@@ -54,15 +53,19 @@
 <!-- bootstrap core js -->
 <script src="${js}bootstrap.min.js"></script>
 
+<!-- jquery -->
+<script src="${js}/jquery.js"></script>
+ 
  <!-- datatable plugin -->
  <script src="${js}/jquery.dataTables.js"></script> 
   
+
+</div>
+</div>
   
 <!-- selfcoded -->
 <script src="${js}/apprentstyle.js"></script>
 
 
-</div>
-</div>
 </body>
 </html> 
