@@ -10,9 +10,9 @@
  
  );
  
- INSERT INTO category (name,description,image_url,is_active) VALUES ('WOODEN WORK','THIS IS THE DESCRIPTION OF WOODEN ITEMS!','CAT_3.pgn',true);
- INSERT INTO category (name,description,image_url,is_active) VALUES ('POTTERY','THIS IS THE DESCRIPTION OF POTTERY ITEMS!','CAT_4.pgn',true);
- INSERT INTO category (name,description,image_url,is_active) VALUES ('METAL WORK','THIS IS THE DESCRIPTION OF METAL ITEMS!','CAT_5.pgn',true);
+ INSERT INTO category (name,description,image_url,is_active) VALUES ('JAVASCRIPT','THIS IS THE DESCRIPTION OF HTML & CSS!','CAT_3.png',true);
+ INSERT INTO category (name,description,image_url,is_active) VALUES ('BOOTSTRAP','THIS IS THE DESCRIPTION OF BOOTSTRAP!','CAT_4.png',true);
+ INSERT INTO category (name,description,image_url,is_active) VALUES ('HTML AND CSS','THIS IS THE DESCRIPTION OF JS!','CAT_5.png',true);
   
  
  CREATE TABLE user_detail(
@@ -62,17 +62,17 @@
  );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
- VALUES ('PRDABC123DEFX', 'WOODEN CRAFT', 'ZAORI', 'this is one of the best usable product for home!', 12000, 5, true, 3, 2 );
+ VALUES ('PRDABC123DEFX', 'HTML5', 'Apprent', 'LEARN HTML5 AND CSS3!', 12000, 5, true, 3, 2 );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
- VALUES ('PRDDEF123DEFX', 'SOFT TOY', 'LEGO', 'LOVABLE TO ALL!', 6000, 2, true, 3, 3 );
+ VALUES ('PRDDEF123DEFX', 'CSS3', 'Apprent', 'LEARN CSS3', 6000, 2, true, 3, 3 );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
- VALUES ('PRDABC123WGTX', 'BLUE POTTERY', 'AUREA', 'this is one of the finest pottery!', 1999, 5, true, 3, 2 );
+ VALUES ('PRDABC123WGTX', 'HTML & CSS', 'Apprent', 'LEARN EASY', 1999, 5, true, 3, 2 );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
- VALUES ('PRDABC3DEFX', 'METAL WORK', 'EXCLUSIVELANE', 'this is one of the best usable product for home!', 16000, 3, true, 1, 2 );
+ VALUES ('PRDABC3DEFX', 'AGULAR JS', 'Apprent', 'this is one of the best usable product for home!', 16000, 3, true, 1, 2 );
  
  INSERT INTO product(code, name, brand, description, unit_price, quantity, is_active, category_id, supplier_id)
- VALUES ('PRDABCWWFX', 'JEWELLERY BOX', 'HANDISTORE', 'this is one of the best usable product for home!', 12000, 5, true, 1, 3 );
+ VALUES ('PRDABCWWFX', 'NODE JS', 'Apprent', 'this is one of the best usable product for home!', 12000, 5, true, 1, 3 );
  

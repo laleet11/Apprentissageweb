@@ -15,10 +15,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title>Apparent home - ${title}</title>
  <script>
- window.menu='${title}';
+ window.menu = '${title}';
+ 
+ window.contextRoot = '${contextRoot}'
  </script>
  <!-- bootstrap core css --> 
  <link href= "${css}/bootstrap.min.css" rel="stylesheet">
+ <!-- bootstrap dataTable css --> 
+ <link href= "${css}/dataTables.bootstrap.css" rel="stylesheet">
  <!-- custom css -->
  <link href= "${css}/apprentstyle.css" rel="stylesheet">
    
@@ -43,23 +47,32 @@
 </c:if>
  
  <!-- loads only when user click on category -->
-<c:if test="${userClickALLProducts == true or userClickCategoryProducts == true}">
+<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
   <%@include file="listProducts.jsp" %>
+</c:if>   
+
+ <!-- loads only when user click on show product -->
+<c:if test="${userClickShowProduct == true}">
+  <%@include file="singleProduct.jsp" %>
 </c:if>  
 
 <!-- footer -->
 <%@include file="./shared/footer.jsp" %>
 
-<!-- bootstrap core js -->
-<script src="${js}bootstrap.min.js"></script>
-
 <!-- jquery -->
 <script src="${js}/jquery.js"></script>
+
+<!-- bootstrap core js -->
+<script src="${js}/bootstrap.min.js"></script>
+
+
  
  <!-- datatable plugin -->
  <script src="${js}/jquery.dataTables.js"></script> 
   
-
+<!-- datatable plugin -->
+ <script src="${js}/dataTables.bootstrap.js"></script> 
+ 
 </div>
 </div>
   

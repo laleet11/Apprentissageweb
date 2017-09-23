@@ -18,17 +18,7 @@
   </properties>
 
   <dependencies>
-    <!-- jackson -->
-    <dependency>
-     <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
-    <dependency>
-     <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-annotations</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -60,12 +50,23 @@
 			<artifactId>spring-orm</artifactId>
 			<version>${spring.version}</version>
      </dependency>
-	<!-- dbcp2 -->
+	<!-- dbcp2 connection pooling-->
 	 <dependency>
              <groupId>org.apache.commons</groupId>
              <artifactId>commons-dbcp2</artifactId>
              <version>2.1.1</version>
      </dependency>
+         <!-- jackson -->
+    <dependency>
+     <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+     <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
 	</dependencies>
   <build>
   <plugins>

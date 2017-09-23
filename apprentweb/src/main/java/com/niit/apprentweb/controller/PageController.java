@@ -7,13 +7,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.apprentback.dao.CategoryDAO;
+import com.niit.apprentback.dao.ProductDAO;
 import com.niit.apprentback.dto.Category;
+import com.niit.apprentback.dto.Product;
 
 @Controller
 public class PageController {   
 	@Autowired
 	private CategoryDAO categoryDAO;
-	
+	@Autowired
+	private ProductDAO productDAO;
  
 	@RequestMapping(value = {"/", "/home", "/index"})   
 	public ModelAndView index()
@@ -47,9 +50,9 @@ public class PageController {
     { ModelAndView mv= new ModelAndView("page");
       mv.addObject("title","All Products");
        //passing the list of categories
-      mv.addObject("Categories",categoryDAO.list());
+      mv.addObject("categories",categoryDAO.list());
       
-      mv.addObject("userClickALLProducts",true);
+      mv.addObject("userClickAllProducts",true);
       return mv;
     }
     @RequestMapping(value={"/show/category/{id}/products"})
@@ -75,6 +78,26 @@ public class PageController {
 		return mv;
 
 	}
+    /*
+     * Viewing a single page
+     */
 
-
+     @RequestMapping(value= "/show/{id}/product")
+     public ModelAndView showSingleProduct(@PathVariable int id){
+    	 
+    	 ModelAndView mv = new ModelAndView("page");
+    	 
+    	 Product product = productDAO.get(id);
+    	 
+    	 //update the view  count
+    	 product.setViews(product.getViews() + 1);
+    	 productDAO.update(product); 
+    	 //------------------------
+    	 mv.addObject("title",  product.getName());
+    	 mv.addObject("product", product);
+    	 
+    	 mv.addObject("userClickShowProduct", true);
+    	 
+    	 return mv;
+     }
 }
