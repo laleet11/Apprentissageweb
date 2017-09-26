@@ -22,6 +22,7 @@ import com.niit.apprentback.dao.ProductDAO;
 import com.niit.apprentback.dto.Category;
 import com.niit.apprentback.dto.Product;
 import com.niit.apprentweb.util.FileUploadUtility;
+import com.niit.apprentweb.validator.ProductValidator;
 
 @Controller
 @RequestMapping("/manage")
@@ -67,6 +68,8 @@ public class ManagementController {
 	@RequestMapping(value="/products", method=RequestMethod.POST)
 	public String handleProductSubmission(@Valid @ModelAttribute("product") Product mProduct, BindingResult results, Model model,
 			HttpServletRequest request){
+	    new ProductValidator().validate(mProduct, results);    
+		
 	
 		//check if there are any errors
 		if(results.hasErrors()){
