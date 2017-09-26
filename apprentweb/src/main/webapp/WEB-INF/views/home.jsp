@@ -1,15 +1,5 @@
-<div class="container1">
-<div class="panel-group" >
-  <div class="panel panel-default" >
-  <div class="panel-heading"><h1><b>LEARN</b></h1></div>
-    <div class="panel-body">
-    <h3><i>Anything..Anywhere..Anytime..</i></h3>
-    </div>
-  </div>
-  </div>
-</div>
-</div>
-<div class="container">
+
+<div class="container" style="padding-top:500px">
 <br>
 <h1 class="big" style="color:white; text-align:center;"><b>COURSES ARE</b></h1>
 <br>

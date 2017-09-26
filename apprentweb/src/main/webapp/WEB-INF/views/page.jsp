@@ -55,10 +55,16 @@
 <c:if test="${userClickShowProduct == true}">
   <%@include file="singleProduct.jsp" %>
 </c:if>  
+ 
+ <!-- loads only when user click on manage product -->
+<c:if test="${userClickManageProducts == true}">
+  <%@include file="manageProducts.jsp" %>
+</c:if>  
+
 
 <!-- footer -->
 <%@include file="./shared/footer.jsp" %>
-
+ 
 <!-- jquery -->
 <script src="${js}/jquery.js"></script>
 

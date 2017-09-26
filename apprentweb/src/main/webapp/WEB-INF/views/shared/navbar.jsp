@@ -26,6 +26,11 @@
     <i class="fa fa-shopping-bag">VIEW PRODUCT</i>
    </a>
   </li>
+  <li id="manageProducts" style="float:right">
+   <a href="${contextRoot}/manage/products" class="w3-bar-item w3-button">
+    <i class="fa fa-product-hunt">MANAGE PRODUCT</i>
+   </a>
+  </li>
   </ul> 
   </div>
 </nav>
