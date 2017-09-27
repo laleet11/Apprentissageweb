@@ -1,4 +1,4 @@
-<%@taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
+ <%@taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
 <div class="container" style="padding-top: 150px">
 <div class="row">
 
@@ -107,5 +107,64 @@
 </div>
 </div>
 </div>
+ 
+
 </div>
+<div class="col-xs-12">
+<h3>Available Products</h3>
+<hr/>
 </div>
+
+<div class="col-xs-12">
+
+<div style="overflow:auto">
+
+<!-- product table for admin  -->
+
+<table id="adminProductsTable" class="table table-striped table-bordered">
+<thead>
+<tr>
+<th>Id</th>
+<th>&#160;</th>
+<th>Name</th>
+<th>Brand</th>
+<th>Quantity</th>
+<th>Unit Price</th>
+<th>Active</th>
+<th>Edit</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<th>Id</th>
+<th>&#160;</th>
+<th>Name</th>
+<th>Brand</th>
+<th>Quantity</th>
+<th>Unit Price</th>
+<th>Active</th>
+<th>Edit</th>
+</tr>
+</tfoot>
+</table>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

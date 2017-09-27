@@ -79,6 +79,9 @@
 <!-- datatable plugin -->
  <script src="${js}/dataTables.bootstrap.js"></script> 
  
+<!--  boot box -->
+ <script src="${js}/bootbox.min.js"></script> 
+
 </div>
 </div>
   

@@ -12,7 +12,7 @@ import com.niit.apprentback.dao.ProductDAO;
 import com.niit.apprentback.dto.Product;
 
 @Controller
-@RequestMapping("/json/data")
+@RequestMapping("/json/data") 
 public class JsonDataController {
 		
 	@Autowired
@@ -26,7 +26,13 @@ public class JsonDataController {
 		return productDAO.listActiveProducts();
 	
 	}
+	@RequestMapping("/admin/all/products")
+	@ResponseBody
+	public List<Product> getAllProductsForAdmin(){
 	
+		return productDAO.list();
+	
+	}
 	@RequestMapping("/category/{id}/products")
 	@ResponseBody
 	public List<Product> getProductsByCategory(@PathVariable int id){
