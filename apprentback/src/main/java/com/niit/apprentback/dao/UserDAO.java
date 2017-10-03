@@ -6,7 +6,7 @@ import com.niit.apprentback.dto.User;
 
 public interface UserDAO {
 	
-	//add an user
+	    //add an user
 		boolean addUser(User user);
 		
 		// add an address

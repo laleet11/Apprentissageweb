@@ -68,6 +68,10 @@
 <!-- jquery -->
 <script src="${js}/jquery.js"></script>
 
+<!-- jquery validation -->
+<script src="${js}/jquery.validate.js"></script>
+
+
 <!-- bootstrap core js -->
 <script src="${js}/bootstrap.min.js"></script>
 

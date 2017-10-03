@@ -8,33 +8,30 @@ import javax.persistence.Id;
 
 @Entity
 public class Address {
-
-	/*
-	 * private fields
-	 */
+   /*
+    * private fields
+    */
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+	private int id;
 	@Column(name = "user_id")
 	private int userId;
 	@Column(name = "address_line_one")
 	private String addressLineOne;
-	@Column(name = "address_line_two")
+	@Column(name = "address_line_Two")
 	private String addressLineTwo;
 	private String city;
 	private String state;
 	private String country;
-	@Column(name="postal_code")
+	@Column(name = "postal_code")
 	private String postalCode;
 	private boolean shipping;
 	private boolean billing;
 	
-	
 	/*
-	 * getter setter
-	 * 
+	 * setter and getter for the fields
 	 */
-	
 	public int getId() {
 		return id;
 	}
@@ -95,17 +92,13 @@ public class Address {
 	public void setBilling(boolean billing) {
 		this.billing = billing;
 	}
-	
+	/*
+	 * toString for logging and debugging activity
+	 */
 	@Override
 	public String toString() {
 		return "Address [id=" + id + ", userId=" + userId + ", addressLineOne=" + addressLineOne + ", addressLineTwo="
 				+ addressLineTwo + ", city=" + city + ", state=" + state + ", country=" + country + ", postalCode="
 				+ postalCode + ", shipping=" + shipping + ", billing=" + billing + "]";
 	}
-	
-	
-	
-
-	
-	
 }

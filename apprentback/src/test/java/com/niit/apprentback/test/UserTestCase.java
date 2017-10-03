@@ -37,8 +37,7 @@ public class UserTestCase {
 		user.setEmail("hr@gmail.com");
 		user.setContactNumber("1234512345");
 		user.setRole("CUSTOMER");
-		user.setEnabled(true);
-		user.setPassword("12345");
+		user.setPassword("123456");
 		
 		
 		// add the user
@@ -57,15 +56,14 @@ public class UserTestCase {
 		address.setUserId(user.getId());
 	
 		
-		// add the address
-				assertEquals("Failed to add address!",true, userDAO.addAddress(address)); 
+	// add the address
+	assertEquals("Failed to add address!",true, userDAO.addAddress(address)); 
 				
 				
-				if(user.getRole().equals("USER")) {
-					
+		            if(user.getRole().equals("USER")) {
 					//create a cart for this user
 					cart = new Cart();
-					cart.setUserId(user.getId());
+					cart.setUser(user);
 					
 					// add the cart
 					assertEquals(" Failed to add cart!",true, userDAO.addCart(cart));
@@ -83,16 +81,11 @@ public class UserTestCase {
 					address.setShipping(true);
 					
 					//link it with the user
-					address.setId(user.getId());
+					address.setUserId(user.getId());
 					
 					
-					// add the shipping adderss
+					// add the shipping address
 					assertEquals("Failed to add the shipping address!", true, userDAO.addAddress(address));
-					 
-					
-					
 				}
 	}
-	
-	
 }
