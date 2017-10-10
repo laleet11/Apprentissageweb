@@ -89,12 +89,12 @@
     </dependency>
 		
     <!-- link backend project -->
-   	<dependency>
-	<groupId>com.niit</groupId>
-	<artifactId>apprenback</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	</dependency>
-	</dependencies>
+   <dependency>
+    <groupId>com.niit</groupId>
+  <artifactId>apprentback</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  </dependency>
+</dependencies>
 	<build>
 		<plugins>
 			<!-- update to latest version of java -->

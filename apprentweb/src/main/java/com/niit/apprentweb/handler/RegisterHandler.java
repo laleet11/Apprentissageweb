@@ -1,4 +1,4 @@
-package com.niit.onlineshopping.handler;
+package com.niit.apprentweb.handler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.binding.message.MessageBuilder;
@@ -6,11 +6,11 @@ import org.springframework.binding.message.MessageContext;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
-import com.niit.onlineshopping.model.RegisterModel;
-import com.niit.shoppingbackend.dao.UserDAO;
-import com.niit.shoppingbackend.dto.Address;
-import com.niit.shoppingbackend.dto.Cart;
-import com.niit.shoppingbackend.dto.User;
+import com.niit.apprentweb.model.RegisterModel;
+import com.niit.apprentback.dao.UserDAO;
+import com.niit.apprentback.dto.Address;
+import com.niit.apprentback.dto.Cart;
+import com.niit.apprentback.dto.User;
 
 @Component
 public class RegisterHandler {
