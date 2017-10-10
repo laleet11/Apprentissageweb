@@ -19,16 +19,17 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.niit.apprentweb.util.FileUploadUtility;
+import com.niit.apprentweb.validator.ProductValidator;
 import com.niit.apprentback.dao.CategoryDAO;
 import com.niit.apprentback.dao.ProductDAO;
 import com.niit.apprentback.dto.Category;
 import com.niit.apprentback.dto.Product;
-import com.niit.apprentweb.util.FileUploadUtility;
-import com.niit.apprentweb.validator.ProductValidator;
 
 @Controller
 @RequestMapping("/manage")
 public class ManagementController {
+
 	@Autowired
 	private CategoryDAO categoryDAO;
 	
@@ -58,9 +59,11 @@ public class ManagementController {
 			
 			if(operation.equals("product")){
 				mv.addObject("message","Product Submitted Successfully!");
+				
 			}
 			else if(operation.equals("category")){
 				mv.addObject("message","Category Submitted Successfully!");
+				
 			}
 		}
 		return mv;
@@ -158,6 +161,7 @@ public class ManagementController {
 		}
 	
 	
+	
 	// returning categories for all the request mapping
 	@ModelAttribute("categories")
 	public List<Category>getCategories(){
@@ -165,9 +169,8 @@ public class ManagementController {
 	}
 	
 	@ModelAttribute("category")
-	public Category getCategory()
-	{
+	public Category getCategory(){
 		return new Category();
 	}
 	
-}  
+}

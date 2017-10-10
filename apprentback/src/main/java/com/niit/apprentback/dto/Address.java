@@ -1,49 +1,89 @@
 package com.niit.apprentback.dto;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 @Entity
-public class Address {
-   /*
-    * private fields
-    */
-	
+public class Address implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/*
+	 * private fields
+	 */
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
+	/*******************/
+	/*@ManyToOne
+	private User user;
+	
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User id) {
+		this.user = id;
+	}*/
+	
 	@Column(name = "user_id")
 	private int userId;
-	@Column(name = "address_line_one")
-	private String addressLineOne;
-	@Column(name = "address_line_Two")
-	private String addressLineTwo;
-	private String city;
-	private String state;
-	private String country;
-	@Column(name = "postal_code")
-	private String postalCode;
-	private boolean shipping;
-	private boolean billing;
 	
-	/*
-	 * setter and getter for the fields
-	 */
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
 	public int getUserId() {
 		return userId;
 	}
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
+
+	@Column(name= "address_line_one")
+	@NotBlank(message= "Please enter the address line one!")
+	private String addressLineOne;
+	
+	@Column(name= "address_line_two")
+	@NotBlank(message= "Please enter the address line two!")
+	private String addressLineTwo;
+	
+	@NotBlank(message= "Please enter the city name!")
+	private String city;
+	
+	@NotBlank(message= "Please enter the state name!")
+	private String state;
+	
+	@NotBlank(message= "Please enter the country name!")
+	private String country;
+	
+	@Column(name= "postal_code")
+	@NotBlank(message= "Please enter the postal code!")
+	private String postalCode;
+	
+	@Column(name= "is_shipping")
+	private boolean shipping;
+	
+	@Column(name= "is_billing")
+	private boolean billing;
+	
+	/*
+	 * SETTER AND GETTER
+	 */
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
 	public String getAddressLineOne() {
 		return addressLineOne;
 	}
@@ -93,12 +133,16 @@ public class Address {
 		this.billing = billing;
 	}
 	/*
-	 * toString for logging and debugging activity
+	 * toString() for logging 
 	 */
+	
 	@Override
 	public String toString() {
-		return "Address [id=" + id + ", userId=" + userId + ", addressLineOne=" + addressLineOne + ", addressLineTwo="
-				+ addressLineTwo + ", city=" + city + ", state=" + state + ", country=" + country + ", postalCode="
-				+ postalCode + ", shipping=" + shipping + ", billing=" + billing + "]";
+		return "Address [id=" + id + ", addressLineOne=" + addressLineOne + ", addressLineTwo=" + addressLineTwo
+				+ ", city=" + city + ", state=" + state + ", country=" + country + ", postalCode=" + postalCode
+				+ ", shipping=" + shipping + ", billing=" + billing + "]";
 	}
+	
+	
+	
 }
