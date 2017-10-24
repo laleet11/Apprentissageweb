@@ -1,11 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+ <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <spring:url var="css" value="/resources/css" />
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
-<spring:url var="handimg" value="/resources/handimg" />
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
@@ -16,7 +15,7 @@
 <meta name="_csrf" content="${_csrf.token}">
 <meta name="_csrf_header" content="${_csrf.headerName}">
 
-<title>Apparent home - ${title}</title>
+<title>Apparent Home - ${title}</title>
 <script>
 	window.menu = '${title}';
 	
@@ -32,7 +31,7 @@
 
 
 <!-- custom css -->
-<link href="${css}/shopstyle.css" rel="stylesheet">
+<link href="${css}/apprentstyle.css" rel="stylesheet">
 
 </head>
 <body>
@@ -113,7 +112,7 @@
 		
 		<!-- self coded javascript -->
 		
-		<script src="${js}/shopstyle.js"></script>
+		<script src="${js}/apprentstyle.js"></script>
 		
 		
 	</div>

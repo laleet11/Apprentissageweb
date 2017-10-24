@@ -1,5 +1,5 @@
 
-<div class="container" style="padding-top:500px">
+<div class="container" style="padding-top:50px">
 <br>
 <h1 class="big" style="color:white; text-align:center;"><b>COURSES ARE</b></h1>
 <br>
@@ -22,7 +22,7 @@
       <h1 id="z1"><b>HTML</b></h1>
       <p id="z2">With HTML you can create your own Web site. This tutorial teaches you everything about HTML.</p>
       <p id="z2">HTML is easy to learn - You will enjoy it.</p>
-      <p id="z2" style="text-align:center"><a href="#">START LEARNING HTML NOW.</a></p>
+      <p id="z2" style="text-align:center"><button class="btn btn-primary"><a href="#">START LEARNING HTML.</a></p>
       <p id="z2">Brief explanation about:</p>
       <p id="z2">HTML stucture, tags, graphics.</p>
       </div>

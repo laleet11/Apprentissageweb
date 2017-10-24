@@ -19,8 +19,6 @@ public class CartLineDAOImpl implements CartLineDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 	
-	
-	
 	@Override
 	public CartLine get(int id) {
 		return sessionFactory.getCurrentSession().get(CartLine.class, id);

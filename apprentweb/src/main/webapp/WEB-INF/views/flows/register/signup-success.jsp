@@ -9,7 +9,7 @@
 <div class="text-center">
 <br/><br/><br/><br/>
 <h1>Welcome!</h1>
-<h3>Handicraftshopping.com</h3>
+<h3>Apprentweb</h3>
 <h6>You can use your email address as username to login!</h6>
 </div>
 <a href="${contextRoot}/login" class="btn btn-success"> Login Here</a>

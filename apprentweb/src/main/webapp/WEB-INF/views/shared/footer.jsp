@@ -1,4 +1,4 @@
-<footer class="site-footer" style="color:white; font-size:18px">
+<footer class="site-footer" style="color:white; font-size:18px; background-color:black">
 <div class="container">
 <div class="row">
 <div class="col-md-5">

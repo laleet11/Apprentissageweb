@@ -7,12 +7,12 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.niit.apprentweb.model.UserModel;
 import com.niit.apprentback.dao.CartLineDAO;
 import com.niit.apprentback.dao.ProductDAO;
 import com.niit.apprentback.dto.Cart;
 import com.niit.apprentback.dto.CartLine;
 import com.niit.apprentback.dto.Product;
+import com.niit.apprentweb.model.UserModel;
 
 @Service("cartService")
 public class CartService {

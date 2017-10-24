@@ -1,7 +1,7 @@
 <%@taglib prefix="security" uri="http://www.springframework.org/security/tags"%>
 
 <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="nav-bar-header">
 			<button type="button" class="navbar-toggle" data-target="#mainNavbar"
 				data-toggle="collapse">
@@ -9,7 +9,7 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-<!--  		<a class="navbar-brand zero_padding" href="${contextRoot}/home"><img src="resources/handimg/logo.jpg" style="height:30px; width: 80px; padding: 0px 0px 0px 0px;"></a>--> 
+  		<a class="navbar-brand" href="${contextRoot}/home" style="font-size:25px; background-color:white; color: black"><strong>APPRENTISSAGE</strong></a>
 		</div>
 		<div class="navbar-collapse collapse" id="mainNavbar">
 			<ul class="nav navbar-nav">
